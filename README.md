@@ -1,0 +1,1 @@
+Demo files for session on going from plain to Docker to K8S to Istio
