@@ -4,7 +4,7 @@ metadata:
   name: server
 spec:
   selector:
-    name: greeter
+    app: greeter
   ports:
   - name: name-of-service-port
     protocol: TCP
