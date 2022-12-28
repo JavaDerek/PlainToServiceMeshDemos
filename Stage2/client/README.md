@@ -4,6 +4,9 @@ sudo docker build -f Dockerfile -t client .
 
 Run Docker image with...
 
-sudo docker run --net stage2-net -it client:latest /bin/bash
+    During the build process...
+sudo docker run --net stage2-net --name client client
+    If pulling from our central Docker Hub repo...
+sudo docker run --net stage2-net --name client javaderek/client:stage2
 
 Kill running process with Ctrl-C
