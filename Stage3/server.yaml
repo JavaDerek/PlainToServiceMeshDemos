@@ -4,7 +4,7 @@ metadata:
   name: server
 spec:
   containers:
-    - image: javaderek/greeter:stage2
+    - image: javaderek/greeter:stage3
       name: server
       ports:
         - containerPort: 8080
