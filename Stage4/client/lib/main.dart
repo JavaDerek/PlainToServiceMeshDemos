@@ -10,7 +10,7 @@ void main() {
   Timer.periodic(
       oneSec,
       (Timer t) => http
-              .read(Uri.parse('http://localhost:8080/greeting'),
+              .read(Uri.parse('http://server:8080/greeting'),
                   headers: headerMap)
               .then((contents) {
             var rawBytes = latin1.encode(contents);
