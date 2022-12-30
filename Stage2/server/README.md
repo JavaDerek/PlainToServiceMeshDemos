@@ -1,6 +1,6 @@
 Build Docker image with...
 
-sudo docker build -f Dockerfile -t greeter .
+sudo docker build --no-cache -f Dockerfile -t greeter .
 
 Run Docker image with the commands below. Note the use of the user-defined bridge network...
 

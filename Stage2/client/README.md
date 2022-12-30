@@ -1,6 +1,6 @@
 Build Docker image with...
 
-sudo docker build -f Dockerfile -t client .
+sudo docker build --no-cache -f Dockerfile -t client .
 
 Run Docker image with...
 
