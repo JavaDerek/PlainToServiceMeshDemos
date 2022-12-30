@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  labels:
+    app: client
+    version: "2"
+  name: client-v2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: client
+      version: "2"
+  template:
+    metadata:
+      labels:
+        app: client
+        version: "2"
+    spec:
+      containers:
+        - image: javaderek/client:stage4
+          name: client
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "128Mi"
+            limits:
+              cpu: "1000m"
+              memory: "256Mi"
