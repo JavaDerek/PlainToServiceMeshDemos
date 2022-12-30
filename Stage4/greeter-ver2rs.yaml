@@ -18,7 +18,7 @@ spec:
         version: "3"
     spec:
       containers:
-        - image: javaderek/greeter:stage4
+        - image: javaderek/greeter:stage4b
           name: server
           livenessProbe:
             httpGet:
