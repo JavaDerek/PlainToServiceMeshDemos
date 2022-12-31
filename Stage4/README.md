@@ -1,3 +1,5 @@
+NOTE: Always launch the service/server after the greeters!
+
 This stage picks up with Istio installed and pod injection turned on (by labeling it with "istio-injection=true" for the "istioinaction" namespace.
 
 * Set this namespace as your default context

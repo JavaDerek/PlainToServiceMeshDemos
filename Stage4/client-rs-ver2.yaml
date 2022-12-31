@@ -10,15 +10,15 @@ spec:
   selector:
     matchLabels:
       app: client
-      version: "2"
+      version: "3"
   template:
     metadata:
       labels:
         app: client
-        version: "2"
+        version: "3"
     spec:
       containers:
-        - image: javaderek/client:stage4c
+        - image: javaderek/client:stage4d
           name: client
           resources:
             requests:
